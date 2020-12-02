@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -21,37 +22,18 @@ export default function Home() {
             src="/dibujos/ibuki.png"
             alt="Ibuki Fanart" />
         </p>
-
+     
       </main>
+  
+      <a
+        href="/pets"
+      > <img
+            style={{ width: "100%" }}
+            src="/pets/banner.png"
+            alt="Banner" /> 
+      </a>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://www.instagram.com/mm.a.yu/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            style={{ paddingRight: 5 }}
-            src="/instagram.svg"
-            alt="Logo Instagram m.ayu"
-            className={styles.logo} />
-          Instagram
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCA7lu2Bat3MK9ficXdM46ww
-          "
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            style={{ paddingRight: 5 }}
-            src="/youtube.svg"
-            alt="Logo YouTube m.ayu"
-            className={styles.logo} />
-          YouTube
-        </a>
-        <a style={{ paddingLeft: 20 }} href="/attr"><small>Atribuciones</small></a>
-      </footer>
+      <Footer />
     </div>
   )
 }

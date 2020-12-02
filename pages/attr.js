@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Footer from '../components/Footer.js'
 
 export default function Home() {
   return (
@@ -18,15 +19,7 @@ export default function Home() {
         </p>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://www.instagram.com/mm.a.yu/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/instagram.svg" alt="Logo Instagram m.ayu" className={styles.logo} />
-        </a>
-      </footer>
+      <Footer />
     </div>
   )
 }
